@@ -1,0 +1,3 @@
+<nav class="topbar"><a class="brand" href="/"><span>📚</span>Dijital Kütüphane</a><div class="top-actions">
+<% if(user){ %><% if(user.role==="SUPER_ADMIN"){ %><a href="/admin">Admin Panel</a><% } %><% if(user.role==="LIBRARY_ADMIN"){ %><a href="/panel">Kütüphane Paneli</a><% } %><form method="post" action="/logout"><button>Çıkış</button></form><% } else { %><a href="/library-login">Kütüphane Girişi</a><a href="/library-register">Başvuru</a><a href="/admin-login">Admin</a><% } %>
+</div></nav>
